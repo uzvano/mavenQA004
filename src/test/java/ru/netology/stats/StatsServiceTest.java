@@ -5,20 +5,20 @@ import org.junit.jupiter.api.Test;
 
 public class StatsServiceTest {
 
-    int[] arr = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+    long[] arr = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
     StatsService service = new StatsService();
 
     @Test
     public void testSumSales() {
-        int expected = 180;
-        int actual = service.sumSales(arr);
+        long expected = 180;
+        long actual = service.sumSales(arr);
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
     public void testSumSalesAverage() {
-        int expected = 15;
-        int actual = service.sumSalesAverage(arr);
+        long expected = 15;
+        long actual = service.sumSalesAverage(arr);
         Assertions.assertEquals(expected, actual);
     }
 
